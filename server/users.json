@@ -1,0 +1,177 @@
+[
+    {
+        "fname": "Casey",
+        "lname": "Largent",
+        "email": "clargent@me.com",
+        "password": "test1",
+        "accounts": [
+            {"CreditCard":
+                {
+                    "cc_amountDue": 50.31,
+                    "cc_interestRate": 10.4,
+                    "cc_creditCardNo": "1111222333444",
+                    "cc_dueDay": 23,
+                    "cc_creditLimit": 500.00,
+                    "cc_minMonthPayment": 30.00
+                }
+            },
+            {"Checking":
+                {
+                    "checking_accountBalance": 1743.69,
+                    "checking_availableBalance": 1643.69,
+                    "checking_debitCardNo": "0987654321234567"
+                }
+            },
+            {"Savings":
+                {
+                    "save_accountBalance": 1000.00,
+                    "save_availableBalance": 1000.00,
+                    "save_interestRate": 0.5
+                }
+            }
+        ]
+    },
+    {
+        "fname": "Erik",
+        "lname": "Shafer",
+        "email": "eshafer@me.com",
+        "password": "supersecret",
+        "accounts": [
+            {"CreditCard":
+                {
+                    "cc_amountDue": 145.13,
+                    "cc_interestRate": 8.76,
+                    "cc_creditCardNo": "5555666677778888",
+                    "cc_dueDay": 17,
+                    "cc_creditLimit": 600.00,
+                    "cc_minMonthPayment": 42.00
+                }
+            },
+            {"Checking":
+                {
+                    "checking_accountBalance": 243.30,
+                    "checking_availableBalance": 230.31,
+                    "checking_debitCardNo": "1234567980123456"
+                }
+            },
+            {"Savings":
+                {
+                    "save_accountBalance": 1763.40,
+                    "save_availableBalance": 1663.00,
+                    "save_interestRate": 1.5
+                }
+            },
+            {"RetirementAccount":
+                {
+                    "ra_balance": 15643.23,
+                    "ra_interest": 23.15,
+                    "ra_principle": 2356.00,
+                    "ra_type": "deferred",
+                    "ra_cashSurrender": 56.31,
+                    "ra_maturityDate": new Date('10 06 2035'),
+                    "ra_startDate": new Date('10 06 2015')
+                }
+            },
+            {"CarLoan":
+                {
+                    "carLoan_amount": 5000.00,
+                    "carLoan_interestRate": 4.3,
+                    "carLoan_term": "Standard-Term",
+                    "carLoan_vehiclePrice": 13500.00
+                }
+            }
+        ]
+    },
+    {
+        "fname": "Greg",
+        "lname": "Baltzer",
+        "email": "gbaltzer@me.com",
+        "password": "uwotm8",
+        "accounts": [
+            {"CreditCard":
+                {
+                    "cc_amountDue": 346.31,
+                    "cc_interestRate": 12.34,
+                    "cc_creditCardNo": "9898787813134848",
+                    "cc_dueDay": 16,
+                    "cc_creditLimit": 230.00,
+                    "cc_minMonthPayment": 20.00
+                }
+            },
+            {"Checking":
+                {
+                    "checking_accountBalance": 150.00,
+                    "checking_availableBalance": 150.00,
+                    "checking_debitCardNo": "8675309867530910"
+                }
+            },
+            {"Savings":
+                {
+                    "save_accountBalance": 250.53,
+                    "save_availableBalance": 250.00,
+                    "save_interestRate": 3.4
+                }
+            },
+            {"MortgageLoan":
+                {
+                    "ml_homeValue": 155000,
+                    "ml_loanAmount": 125000,
+                    "ml_interestRate": 2.5,
+                    "ml_loanTerm": "Fixed-Rate",
+                    "ml_loanStart": new Date('8 24 2013')
+                }
+            },
+            {"CarLoan":
+                {
+                    "carLoan_amount": 1200.00,
+                    "carLoan_interestRate": 7.3,
+                    "carLoan_term": "Standard-Term",
+                    "carLoan_vehiclePrice": 11300.00
+                }
+            }
+        ]
+    },
+    {
+        "fname": "Granny",
+        "lname": "Smith",
+        "email": "gsmith@me.com",
+        "password": "puddinPops",
+        "accounts": [
+            {"CreditCard":
+                {
+                    "cc_amountDue": 30.27,
+                    "cc_interestRate": 6.3,
+                    "cc_creditCardNo": "698745123012386",
+                    "cc_dueDay": 8,
+                    "cc_creditLimit": 650.00,
+                    "cc_minMonthPayment": 75.00
+                }
+            },
+            {"Checking":
+                {
+                    "checking_accountBalance": 10360.00,
+                    "checking_availableBalance": 10360.00,
+                    "checking_debitCardNo": "8563278965321478"
+                }
+            },
+            {"Savings":
+                {
+                    "save_accountBalance": 230785.00,
+                    "save_availableBalance": 2000000.00,
+                    "save_interestRate": 7.5
+                }
+            },
+            {"RetirementAccount":
+                {
+                    "ra_balance": 567321.23,
+                    "ra_interest": 26.30,
+                    "ra_principle": 15000.00,
+                    "ra_type": "immediate",
+                    "ra_cashSurrender": 350000.00,
+                    "ra_maturityDate": new Date('12 16 2015'),
+                    "ra_startDate": new Date('05 13 1965')
+                }
+            }
+        ]
+    }
+

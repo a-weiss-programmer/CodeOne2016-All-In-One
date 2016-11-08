@@ -1,0 +1,366 @@
+/* Global Styles */
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #e9ebee;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* START IMAGE & LOGO CSS */
+
+.fnb-logo {
+    display: block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: url(../images/site/fnb_logo_small_white_cropped.png) no-repeat;
+    width: 250px; /* Width of new image */
+    height: 59px; /* Height of new image */
+    padding-left: 250px; /* Equal to width of new image */
+    border: none;
+    margin-top: -6px;
+}
+
+.icon-img {
+    width: 18px;
+    height: 18px;
+    border-radius: 2px;
+    -moz-box-sizing: border-box;
+}
+
+.icon-bsns-get-money {
+    display: block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: url(../images/icons/business/get-money.png) no-repeat;
+    width: 250px; /* Width of new image */
+    height: 59px; /* Height of new image */
+    padding-left: 250px; /* Equal to width of new image */
+    border: none;
+    margin-top: -6px;
+}
+
+.em {
+    height: 1.75em;
+    width: 1.75em;
+}
+
+.emoji-left {
+    float: left;
+    margin-right: 12px;
+    margin-left: 2px;
+}
+
+/* END IMAGE & LOGO CSS */
+
+.upcoming-transact-deduction {
+    position: relative;
+    text-align: left;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    background-color: #ffeae8;
+    border: 2px solid #c88b8d;
+}
+
+.upcoming-transact-deposit {
+    position: relative;
+    text-align: left;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    background-color: #e5ffe8;
+    border: 2px solid #a3c8ae;
+}
+
+.transact-text-right {
+    position: relative;
+    text-align: right;
+    margin-bottom: -1px;
+    margin-right: 4px;
+}
+
+.align-left {
+    float: left;
+}
+
+.align-right {
+    float: right;
+    color: #1f1f1f;
+}
+
+.spacer-left {
+    margin-left: 10px;
+    font-weight: bold;
+    color: #1f1f1f;
+}
+
+.list-group-item {
+    border: none;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.container-footer {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* HOME ACCOUNT INFORMATION */
+.home-account-info {
+    padding-top: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
+    color: #282828;
+    font-size: 88%;
+    font-weight: 200;
+}
+
+/* NAVIGATION CSS */
+
+/* navbar link hover background */
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+    color: #ffffff;
+    background-color: #041;      /* FNB */
+}
+
+/* drop down hover */
+.navbar-inverse .dropdown-menu > li > a:hover,
+.navbar-inverse .dropdown-menu > .active > a,
+.navbar-inverse .dropdown-menu > .active > a:hover {
+    background-color: #041;  /* FNB */
+}
+
+/* START ANIMATION CSS */
+
+.animate-permanent-5sec-refresh {
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+}
+
+.animate-new-message {
+    animation-duration: 1s;
+    animation-delay: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+.animate-navbar-logo
+{
+    animation-duration: .25s;
+    animation-delay: 0s;
+}
+
+.animate-navbar-links
+{
+    animation-duration: .25s;
+    animation-delay: .25s;
+}
+
+.animate-content-panel
+{
+    animation-duration: .25s;
+    animation-delay: .25s;
+}
+
+.animate-content-title
+{
+    animation-duration: .25s;
+    animation-delay: .25s;
+}
+
+.animate-content-body
+{
+    animation-duration: .25s;
+    animation-delay: .25s;
+}
+
+/* END ANIMATION CSS */
+
+@media (min-width: 768px) {
+    .navbar-nav > li > a {
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+}
+.navbar-inverse {
+    background-color: #006633;
+}
+
+.navbar {
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.panel {
+    margin-bottom: 21px;
+    background-color: #ffffff;
+    border: 1px solid transparent;
+    border-radius: 0;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.panel-home-accounts-body {
+    background-color: transparent;
+    padding: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.panel-default > .panel-heading {
+    color: #ffffff;
+    background-color: #49926d;
+    border-color: #004d69;
+}
+
+.panel-home-accounts {
+    padding: 4px;
+    background-color: #faf3f3;
+    border: 1px solid #cbca80;
+    border-radius: 8px;
+    font-size: 90%;
+}
+
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus{
+    background-color: #041;
+}
+
+.navbar-inverse .dropdown-menu{
+    background-color: #006633;
+}
+.dropdown {
+    cursor:pointer;
+}
+
+
+.img-home-portfolio,
+.img-customer,
+.portfolio-item {
+    margin-bottom: 30px;
+}
+
+.tab-pane {
+    margin-top: 15px;
+}
+
+/* Page Sections */
+.section,
+.section-colored {
+    padding: 50px 0;
+}
+
+.section-colored {
+    background-color: #e1e1e1;
+    /* change this to change the background color of a colored section */
+}
+
+.sidebar {
+    margin-top: 40px;
+}
+
+.sidebar ul {
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid #cccccc;
+}
+
+/* Half Page Height Carousel Customization */
+.carousel {
+    height: 50%;
+}
+
+.item,
+.active,
+.carousel-inner {
+    height: 100%;
+}
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Social Icons Styles */
+.list-social-icons {
+    margin-bottom: 45px;
+}
+
+.tooltip-social a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.facebook-link a:hover {
+    color: #3b5998;
+}
+
+.linkedin-link a:hover {
+    color: #007fb1;
+}
+
+.twitter-link a:hover {
+    color: #39a9e0;
+}
+
+.google-plus-link a:hover {
+    color: #d14836;
+}
+
+/* Service Page Styles */
+.service-icon {
+    font-size: 50px;
+}
+
+/* 404 Page Styles */
+.error-404 {
+    font-size: 8em;
+}
+
+/* Pricing Page Styles */
+.price {
+    font-size: 4em;
+}
+
+.price-cents {
+    vertical-align: super;
+    font-size: 50%;
+}
+
+.price-month {
+    font-size: 35%;
+    font-style: italic;
+}
+
+/* Footer Styles */
+footer {
+    margin: 50px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+
+    .carousel {
+        height: 70%;
+        /* increases the carousel height so it looks good on phones */
+    }
+}
+
+.btn-group .dropdown-toggle.btn-primary ~ .dropdown-menu {
+    background-color: #006417;
+    border-color: #006417;
+}

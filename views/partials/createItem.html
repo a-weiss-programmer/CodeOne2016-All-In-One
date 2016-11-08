@@ -1,0 +1,66 @@
+<!-- Page Content -->
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-lg-12">
+            <h1 class="page-header">To Do List
+                <small>Edit to do list</small>
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href="../index.html">Home</a></li>
+                <li class="active">Contact</li>
+            </ol>
+        </div>
+
+
+    </div>
+    <!-- /.row -->
+
+    <div class="row">
+
+        <div class="col-sm-8">
+            <form role="form" method="POST">
+                <div class="row">
+                    <div class="form-group col-lg-4">
+                        <label for="input1">Account</label>
+                        <input type="text" name="contact_name" class="form-control" id="input1">
+                    </div>
+                    <div class="form-group col-lg-4">
+                        <label for="input2">Priority</label>
+                        <input type="text" name="contact_email" class="form-control" id="input2">
+                    </div>
+                    <div class="form-group col-lg-4">
+                        <label for="input3">Due Date</label>
+                        <input type="text" name="contact_phone" class="form-control" id="input3">
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="form-group col-lg-12">
+                        <label for="input4">Description</label>
+                        <textarea name="contact_message" class="form-control" rows="6" id="input4"></textarea>
+                    </div>
+                    <div class="form-group col-lg-12">
+                        <input type="hidden" name="save" value="contact">
+                        <button type="submit" class="btn btn-primary">Add</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="col-sm-4">
+            <div class="panel panel-default panel-todo text-center">
+                <div class="panel-heading">
+                    <strong>To Do List</strong>
+                </div>
+                <ul class="list-group">
+                    <li class="list-group-item animated bounce animate-content-body">Car Loan: Talk to representative about refinancing Priority: High Due Date: November 12th</li>
+                    <li class="list-group-item animated bounceInUp animate-content-body">Checking: Transfer Money to Mom Priority: Low Due Date: November 15th</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- /.row -->
+
+</div><!-- /.container -->

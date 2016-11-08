@@ -1,0 +1,153 @@
+<script type = "text/javascript">
+var predicted = new CanvasJS.Chart("predictContainer",
+        {
+            title:{
+                text: "",
+            },
+            animationEnabled: true,
+            legend:{
+                verticalAlign: "center",
+                horizontalAlign: "left",
+                fontSize: 20,
+                fontFamily: "Open Sans"        
+            },
+            theme: "theme2",
+            data: [
+            {        
+                type: "pie",       
+                indexLabelFontFamily: "Open Sans",       
+                indexLabelFontSize: 20,
+                indexLabel: "{label} {y}%",
+                startAngle:-20,      
+                showInLegend: true,
+                toolTipContent:"{legendText} {y}%",
+                dataPoints: [
+                {  y: 35.64, legendText:"Rent", label: "Rent" },
+                {  y: 19.23, legendText:"Groceries", label: "Groceries" },
+                {  y: 15.09, legendText:"Gas", label: "" },
+                {  y: 15.63, legendText:"Savings Deposit" , label: "Savings Deposit"},       
+                {  y: 9.41, legendText:"Entertainment" , label: "Entertainment"}
+                ]
+            }
+            ]
+        });
+predicted.render();
+var actual = new CanvasJS.Chart("actualContainer",
+        {
+            title:{
+                text: ""
+            },
+            animationEnabled: true,
+            legend:{
+                verticalAlign: "center",
+                horizontalAlign: "left",
+                fontSize: 20,
+                fontFamily: "Open Sans"        
+            },
+            theme: "theme2",
+            data: [
+            {        
+                type: "pie",       
+                indexLabelFontFamily: "Open Sans",       
+                indexLabelFontSize: 20,
+                indexLabel: "{label} {y}%",
+                startAngle:-20,      
+                showInLegend: true,
+                toolTipContent:"{legendText} {y}%",
+                dataPoints: [
+                {  y: 35.64, legendText:"Rent", label: "Rent" },
+                {  y: 21.53, legendText:"Groceries", label: "Groceries" },
+                {  y: 20.43, legendText:"Gas", label: "Gas" },
+                {  y: 4.30, legendText:"Savings Deposit" , label: "Savings Deposit"},       
+                {  y: 18.01, legendText:"Entertainment" , label: "Entertainment"}
+                ]
+            }
+            ]
+        });
+actual.render();
+
+</script>
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-lg-12">
+            <h1 class="page-header">Budget
+                <small>analysis</small>
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href="../index.html">Home</a>
+                </li>
+                <li class="active">Budget</li>
+            </ol>
+        </div>
+
+    </div>
+
+    <!-- row -->
+    <div class="row row-fluid animated fadeInUp animate-content-panel">
+        <!-- left column, graph -->
+        <div class="col-xs-12 col-md-9">
+            <div class="panel panel-default text-center">
+                <div class="panel-heading">
+                    <strong>Amount Budgeted</strong>
+                </div>
+                <div class="panel-body">
+                    <div id="predictContainer" style="height: 300px; width: 100%;"></div>
+                </div>
+            </div>
+        </div>
+        <!-- right column, transactions -->
+        <div class="col-xs-12 col-md-3">
+            <div class="panel panel-default text-center">
+                <div class="panel-heading">
+                    <strong>Prior Transactions</strong>
+                </div> <!-- ./panel-heading -->
+                <ul class="list-group">
+                    <li class="list-group-item animated bounceInUp animate-content-body upcoming-transact-deduction"><i class="em em-coffee emoji-left"></i>  <strong>Nov 06</strong>: Coffee (Starbucks)       <strong>$7.82</strong></li>
+                    <li class="list-group-item animated bounceInUp animate-content-body upcoming-transact-deduction"><i class="em em-zap emoji-left"></i>  <strong>Nov 05</strong>: Utility (OPPD) <strong>$71. 08</strong></li>
+                    <li class="list-group-item animated bounceInUp animate-content-body upcoming-transact-deduction"><i class="em em-movie_camera emoji-left"></i>  <strong>Nov 05</strong>: [2x] Theater         (Aksarben) <strong>$17.76</strong></li>
+                    <li class="list-group-item animated bounceInUp animate-content-body upcoming-transact-deposit"><i class="em em-moneybag emoji-left"></i>  <strong>Nov 04</strong>: Deposit (State of NE)    <strong>$130.65</strong></li>
+                    <li class="list-group-item animated bounceInUp animate-content-body upcoming-transact-deduction"><i class="em em-coffee emoji-left"></i>  <strong>Nov 04</strong>: Coffee (Starbucks)       <strong>$7.82</strong></li>
+                    <li class="list-group-item animated bounceInUp animate-content-body upcoming-transact-deposit"><i class="em em-moneybag emoji-left"></i>  <strong>Nov 01</strong>: Deposit (Union Pac.)      <strong>$999.99</strong></li>
+                    <li class="list-group-item animated bounceInUp animate-content-body upcoming-transact-deduction"><i class="em em-coffee emoji-left"></i>  <strong>Oct 31</strong>: Coffee (Starbucks)       <strong>$3.93</strong></li>
+                    <li class="list-group-item animated bounceInUp animate-content-body upcoming-transact-deduction"><i class="em em-bread emoji-left"></i>  <strong>Oct 31</strong>: Groceries (Hy-Vee)       <strong>$14.01</strong></li>
+                </ul>
+            </div> <!-- ./panel -->
+        </div> <!-- ./col -->
+    </div> <!-- ./row -->
+
+    <!-- row -->
+    <div class="row row-fluid animated fadeInUp animate-content-panel">
+        <!-- left column, graph -->
+        <div class="col-xs-12 col-md-9">
+            <div class="panel panel-default text-center">
+                <div class="panel-heading">
+                    <strong>Amount Spent</strong>
+                </div>
+                <div class="panel-body">
+                    <div id="actualContainer" style="height: 300px; width: 100%;"></div>
+                </div>
+            </div>
+        </div>
+    <!-- right column, transactions -->
+    <div class="col-xs-12 col-md-3">
+        <div class="panel panel-default text-center">
+            <div class="panel-heading">
+                <strong>Prior Transactions</strong>
+            </div> <!-- ./panel-heading -->
+            <ul class="list-group">
+                <li class="list-group-item animated bounceInUp animate-content-body upcoming-transact-deduction"><i class="em em-coffee emoji-left"></i>  <strong>Nov 06</strong>: Coffee (Starbucks)       <strong>$7.82</strong></li>
+                <li class="list-group-item animated bounceInUp animate-content-body upcoming-transact-deduction"><i class="em em-zap emoji-left"></i>  <strong>Nov 05</strong>: Utility (OPPD) <strong>$71. 08</strong></li>
+                <li class="list-group-item animated bounceInUp animate-content-body upcoming-transact-deduction"><i class="em em-movie_camera emoji-left"></i>  <strong>Nov 05</strong>: [2x] Theater         (Aksarben) <strong>$17.76</strong></li>
+                <li class="list-group-item animated bounceInUp animate-content-body upcoming-transact-deposit"><i class="em em-moneybag emoji-left"></i>  <strong>Nov 04</strong>: Deposit (State of NE)    <strong>$130.65</strong></li>
+                <li class="list-group-item animated bounceInUp animate-content-body upcoming-transact-deduction"><i class="em em-coffee emoji-left"></i>  <strong>Nov 04</strong>: Coffee (Starbucks)       <strong>$7.82</strong></li>
+                <li class="list-group-item animated bounceInUp animate-content-body upcoming-transact-deposit"><i class="em em-moneybag emoji-left"></i>  <strong>Nov 01</strong>: Deposit (Union Pac.)      <strong>$999.99</strong></li>
+                <li class="list-group-item animated bounceInUp animate-content-body upcoming-transact-deduction"><i class="em em-coffee emoji-left"></i>  <strong>Oct 31</strong>: Coffee (Starbucks)       <strong>$3.93</strong></li>
+                <li class="list-group-item animated bounceInUp animate-content-body upcoming-transact-deduction"><i class="em em-bread emoji-left"></i>  <strong>Oct 31</strong>: Groceries (Hy-Vee)       <strong>$14.01</strong></li>
+            </ul>
+        </div> <!-- ./panel -->
+    </div> <!-- ./col -->
+</div> <!-- ./row -->
+</div>
+<!-- /.container -->
